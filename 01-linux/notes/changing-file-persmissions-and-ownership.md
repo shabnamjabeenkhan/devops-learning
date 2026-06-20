@@ -10,17 +10,18 @@
 ## Commands
 
 `chmod` - changes permissions of files
+`sudo chgrp` - changes the group of a file
+`sudo chown` - Changes the directory's and file's owner and group
+`sudo chown -R` = Changes the owner and group of a directory recursively
 
 ## Examples
-touch test.txt
-mkdir projects/demo
-mv projects/demo/test.txt projects/demo/backup.txt
+`chmod u+x,g+w,o-x`
+`sudo chgrp admin2 example.txt`
+`sudo chown newuser:admin2 example.txt`
+`sudo chown -R newuser:admin2 my_directory`
 
 
 ## What I Learned
-The command cp test.txt project/demo/ copies the file test.txt and places it in the folder demo.
-
-The command mkdir creates directories in the current directory.
-
-The command less /var/log/syslog prints out the content of systems log but in a scrollable view.
-The command head -n 20 /etc/services prints out the first 20 lines of /etc/services
+I learned how to change the permissons of a file using chmod.
+You can create script files from an executable file.
+You can change the user and group of a directory recursively.
